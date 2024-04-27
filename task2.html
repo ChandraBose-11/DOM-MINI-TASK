@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 2</title>
+<style>
+    body{
+    background-color:lightblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+    button{
+        background-color: aquamarine;
+        margin: 30px;
+        padding: 5px;
+        border:1px solid black;
+    }
+  h1{
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+    <h1>Use prompt to read a value from user and display it in the span tag </h1>
+    <script>
+        const button=document.createElement("button")
+        const span=document.createElement("span")
+        button.setAttribute("type","buttom")
+        button.innerText="click me"
+        document.body.append(button,span)
+        button.addEventListener("click",foo)
+        function foo(){
+            const ele=prompt("enter your name")
+            span.innerHTML=`your name is<b>${ele}</b>`
+        }
+    </script>
+</body>
+</html>

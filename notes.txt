@@ -1,0 +1,22 @@
+creating element
+const/var/let variablename=document.createElement("tagname")
+variablename.settAttribute("attrname","attrvalue")
+variablename.classlist.add("","")
+variablename.id=""
+variablename.innerHTML/innerText/textContent=''
+append [inside the we give the value string means the value print]
+appendchild [inside the we give the value string means the value not  print there through error]
+
+
+getelement
+
+getelementByid()
+getelementByclassname()//html collection arrray
+getelementByTagname()//html collection arrray
+queryselector()//
+queryselectorAll()
+
+events
+alert,prompt,confirm
+function
+settimeout vs setinterval

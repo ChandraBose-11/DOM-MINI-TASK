@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 3</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="head">Display the mouse X and Y coordinates in atag when you click on</h1>
+    <span id="span"></span>
+    <script>
+        const element = document.getElementById("head")
+        const span = document.getElementById("span")
+        element.addEventListener("click", (e) => {
+            span.innerText = `Coordinates of Mouse X=${e.pageX}  and Mouse Y is=${e.pageY}`
+        })
+    </script>
+</body>
+
+</html>

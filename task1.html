@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+            background-color:lightblue;
+            color: blue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            border: 5px solid rgb(105, 117, 37);
+           margin-top: 100px;
+           margin-left: 40%;
+        }
+    </style>
+</head>
+<body>
+        <h1>Color a span/div element content when a user moves the mouse over the element.</h1>
+        <div id="color" style="text-align: center;">
+           <p> change my color</p>
+    </div>
+    <script>
+        //Color a span/div element content when a user moves the mouse over the element
+        const color=document.getElementById("color")
+        color.addEventListener("mouseover",()=>color.style.backgroundColor="purple")
+        color.addEventListener("mouseleave",()=>color.style.backgroundColor="lightblue")   
+    </script>
+</body>
+
+</html>
